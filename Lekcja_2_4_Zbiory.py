@@ -158,7 +158,17 @@ print()
 print("3: Unikalne liczby")
 print()
 
+print("Wprowadź 10 liczb:")
 
+liczby = set()
+
+for i in range (1, 11):
+    liczby.add(int(input(f"{i}: ")))
+
+print()
+print("Unikalne liczby: ")
+for liczba in liczby:
+    print(liczba)
 
 # ZADANIE 4: Operacje na zbiorach
 
@@ -182,7 +192,22 @@ print()
 print("4: Operacje na zbiorach")
 print()
 
+zbiorA = {1, 2, 3, 4, 5}
+zbiorB = {4, 5, 6, 7, 8}
 
+print(f"Zbiór A: {zbiorA}")
+print(f"Zbiór B: {zbiorB}")
+
+print()
+
+suma = zbiorA | zbiorB
+print(f"Suma: {suma}")
+
+wspolna = zbiorA & zbiorB
+print(f"Cz. wspólna: {wspolna}")
+
+roznica = zbiorA - zbiorB
+print(f"Różnica: {roznica}")
 
 # ZADANIE 5: Filtrowanie duplikatów
 
@@ -203,3 +228,11 @@ print()
 print("5: Filtrowanie duplikatów")
 print()
 
+lista = [2, 4, 4, 6, 8, 12, 5, 7, 6, 4, 2, 20, 10, 8, 7]
+
+print(f"Lista zduplikatami: {lista}")
+print()
+
+lista = list(set(lista))
+
+print(f"Lista bez duplikatów: {lista}")
