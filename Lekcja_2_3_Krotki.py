@@ -141,7 +141,14 @@ print()
 print("4: Konwersja lista ↔ krotka")
 print()
 
+lista = [1, 2, 3, 4, 5]
 
+krotka = tuple(lista)
+
+print(f"Lista: {lista}")
+print(f"Krotka: {krotka}")
+print(f"Typ listy: {type(lista)}")
+print(f"Typ krotki: {type(krotka)}")
 
 # ZADANIE 5: Wyszukiwanie w krotce
 
@@ -163,4 +170,11 @@ print()
 print("5: Wyszukiwanie w krotce")
 print()
 
+imiona = ("Adam", "Paweł", "Rafał", "Katarzyna", "Weronika", "Monika", "Jagoda")
 
+szukaneImie = "Eliza"
+
+if szukaneImie in imiona:
+    print(f"Imie {szukaneImie} znajduje się w krotce.")
+else:
+    print(f"Imie {szukaneImie} nie znajduje się w krotce.")
