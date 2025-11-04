@@ -1,0 +1,16 @@
+	git status
+	git add .
+	git commit -m ""
+	git push origin main
+
+
+////////////////////////
+
+
+	git pull origin main
+
+Jeśli są konflikty:
+
+	git stash
+	git pull origin main
+	git stash pop
